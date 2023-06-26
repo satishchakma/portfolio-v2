@@ -1,0 +1,48 @@
+.hero-section {
+  padding: 68px 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .hero-content {
+  position: relative;
+  z-index: 3;
+}
+.subtitle {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+}
+.hero-content h1 span {
+  color: var(--primary_color);
+}
+.hero-section .hero-content .go-to-project-btn {
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 1px solid #575757;
+  position: relative;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.hero-section .hero-content .go-to-project-btn img {
+  display: block;
+  animation: rotating 6s infinite linear;
+}
+.hero-section .hero-content .go-to-project-btn .arrow {
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  display: block;
+}

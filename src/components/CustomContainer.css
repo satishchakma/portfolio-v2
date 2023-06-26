@@ -1,0 +1,13 @@
+.custom-container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: auto;
+}
+.content-width {
+  max-width: 770px;
+  width: 100%;
+  /* margin-left: auto; */
+  /* margin-left: 120px; */
+  position: absolute;
+  right: 190px;
+}
