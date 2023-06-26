@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 import "./CustomContainer.css";
 import HeroSection from "./HeroSection";
 
@@ -7,6 +8,7 @@ const CustomConatiner = () => {
     <div className="custom-container">
       <div className="content-width">
         <HeroSection></HeroSection>
+        <About></About>
       </div>
     </div>
   );

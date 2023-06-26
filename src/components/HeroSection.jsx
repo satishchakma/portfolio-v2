@@ -10,7 +10,7 @@ AOS.init();
 
 const HeroSection = () => {
   return (
-    <div className="hero-section">
+    <section className="hero-section" id="home">
       <div className="hero-content">
         <div className="right-side">
           <h4 className="subtitle scroll-animation  gap-4">
@@ -48,7 +48,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#portfolio"
-          className="go-to-project-btn scroll-to scroll-animation my-[30px]"
+          className="go-to-project-btn scroll-to scroll-animation my-[50px]"
         >
           <img
             decoding="async"
@@ -58,7 +58,7 @@ const HeroSection = () => {
           <BsArrowDown className="arrow"></BsArrowDown>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

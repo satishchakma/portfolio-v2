@@ -1,15 +1,15 @@
-import React from "react";
 import "./Home.css";
 import illustration from "../assets/illutration.svg";
 import { TbBrandFiverr, TbBrandUpwork, TbSettings } from "react-icons/tb";
-import { FaLinkedinIn, FaGithub, FaRegEnvelope } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { BiCloudDownload } from "react-icons/bi";
 import CustomConatiner from "./CustomConatiner";
 import Dmenu from "./Dmenu";
+import resumePdf from "../assets/Satish Chakma Resume.pdf";
 
-import AnimatedCursor from "react-animated-cursor";
 const Home = () => {
   return (
-    <div className="flex " id="home">
+    <div className="flex ">
       <div className="left-sidebar ">
         <span className="setting-toggle absolute top-14 left-[-20px]">
           <TbSettings className="setting"></TbSettings>
@@ -60,8 +60,9 @@ const Home = () => {
             </a>
           </li>
         </ul>
-        <a href="#contact" className="theme-btn gap-5">
-          <FaRegEnvelope></FaRegEnvelope> Hire Me!
+        <a href={resumePdf} className="theme-btn gap-5" download>
+          <BiCloudDownload className="text-4xl"></BiCloudDownload>
+          Resume!
         </a>
       </div>
       <CustomConatiner></CustomConatiner>
