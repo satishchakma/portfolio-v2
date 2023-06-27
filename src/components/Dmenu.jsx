@@ -3,6 +3,7 @@ import "../components/Demenu.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import { useEffect } from "react";
+import { FaShapes } from "react-icons/fa";
 
 const Dmenu = () => {
   const [activeItem, setActiveItem] = useState("home");
@@ -75,10 +76,10 @@ const Dmenu = () => {
         <li>
           <a
             className="scroll-to flex items-center justify-center gap-5 my-4"
-            href="#services"
+            href="#skills"
           >
-            <span>Services</span>
-            <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
+            <span>Skills</span>
+            <FaShapes className="dmenu-icons"></FaShapes>
           </a>
         </li>
         <li>

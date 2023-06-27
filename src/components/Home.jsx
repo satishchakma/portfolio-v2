@@ -8,9 +8,14 @@ import Dmenu from "./Dmenu";
 import resumePdf from "../assets/Satish Chakma Resume.pdf";
 import Ribbon from "./Ribbon";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 const Home = () => {
   return (
-    <div className="flex ">
+    <div className="flex " data-aos="fade-right" data-aos-duration="6000">
       <div className="left-sidebar ">
         <span className="setting-toggle absolute top-14 left-[-20px]">
           <TbSettings className="setting"></TbSettings>

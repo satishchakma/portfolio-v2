@@ -4,7 +4,12 @@ import { AiOutlineUser } from "react-icons/ai";
 
 const About = () => {
   return (
-    <section id="about" className="my-[90px]">
+    <section
+      id="about"
+      className="my-[90px]"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <h4 className="subtitle scroll-animation  gap-4">
         <AiOutlineUser></AiOutlineUser>
         ABOUT

@@ -3,6 +3,7 @@ import About from "./About";
 import "./CustomContainer.css";
 import HeroSection from "./HeroSection";
 import Ribbon from "./Ribbon";
+import Skills from "./Skills";
 
 const CustomConatiner = () => {
   return (
@@ -10,7 +11,8 @@ const CustomConatiner = () => {
       <div className="content-width">
         <HeroSection></HeroSection>
         <About></About>
-        <Ribbon></Ribbon>
+        {/* <Ribbon></Ribbon> */}
+        <Skills></Skills>
       </div>
     </div>
   );

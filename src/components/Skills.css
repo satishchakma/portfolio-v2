@@ -1,0 +1,6 @@
+.stacks:hover {
+  color: var(--primary_color);
+}
+.stacks {
+  transition: 0.3s all ease-in-out;
+}

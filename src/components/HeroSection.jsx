@@ -10,7 +10,12 @@ AOS.init();
 
 const HeroSection = () => {
   return (
-    <section className="hero-section" id="home">
+    <div
+      className="hero-section"
+      id="home"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="hero-content">
         <div className="right-side">
           <h4 className="subtitle scroll-animation  gap-4">
@@ -18,9 +23,13 @@ const HeroSection = () => {
             INTRODUCE
           </h4>
         </div>
-        <h1 className="scroll-animation text-white font-bold text-5xl leading-[70px] mb-4">
+        <h1
+          data-aos="fade-up"
+          className="scroll-animation text-white font-bold text-5xl leading-[70px] mb-4"
+        >
           Hi, I'm<span> Satish</span>, <br></br>
           <TypeAnimation
+            data-aos="fade-up"
             sequence={[
               // Same substring at the start will only be typed once, initially
               "MERN Stack Developer",
@@ -58,7 +67,7 @@ const HeroSection = () => {
           <BsArrowDown className="arrow"></BsArrowDown>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

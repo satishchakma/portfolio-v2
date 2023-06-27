@@ -24,3 +24,15 @@ body {
 .family-inter {
   font-family: "Inter", sans-serif;
 }
+:root {
+  --primary_color: #28e98c;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
