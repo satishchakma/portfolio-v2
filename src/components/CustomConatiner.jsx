@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import "./CustomContainer.css";
 import HeroSection from "./HeroSection";
+import Ribbon from "./Ribbon";
 
 const CustomConatiner = () => {
   return (
@@ -9,6 +10,7 @@ const CustomConatiner = () => {
       <div className="content-width">
         <HeroSection></HeroSection>
         <About></About>
+        <Ribbon></Ribbon>
       </div>
     </div>
   );

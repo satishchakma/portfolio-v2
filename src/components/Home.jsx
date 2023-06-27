@@ -6,6 +6,7 @@ import { BiCloudDownload } from "react-icons/bi";
 import CustomConatiner from "./CustomConatiner";
 import Dmenu from "./Dmenu";
 import resumePdf from "../assets/Satish Chakma Resume.pdf";
+import Ribbon from "./Ribbon";
 
 const Home = () => {
   return (
@@ -66,6 +67,7 @@ const Home = () => {
         </a>
       </div>
       <CustomConatiner></CustomConatiner>
+      {/* <Ribbon></Ribbon> */}
       <Dmenu></Dmenu>
     </div>
   );

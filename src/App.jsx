@@ -3,6 +3,7 @@ import Home from "./components/Home";
 
 import AnimatedCursor from "react-animated-cursor";
 import { Sugar } from "react-preloaders";
+import Ribbon from "./components/Ribbon";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         }}
       />
       <Sugar time={2000} background="#28e98c" color={"#1f1f1f"}></Sugar>
+      {/* <Ribbon></Ribbon> */}
     </>
   );
 }
