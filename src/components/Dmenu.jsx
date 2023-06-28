@@ -4,6 +4,7 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { useState } from "react";
 import { useEffect } from "react";
 import { FaShapes } from "react-icons/fa";
+import { LiaGripVerticalSolid } from "react-icons/lia";
 
 const Dmenu = () => {
   const [activeItem, setActiveItem] = useState("home");
@@ -17,21 +18,27 @@ const Dmenu = () => {
           // Logic to determine the active item based on scroll position
           const homeSection = document.getElementById("home");
           const aboutSection = document.getElementById("about");
+          const skillsSection = document.getElementById("skills");
           const projectsSection = document.getElementById("projects");
           // ...
 
           const scrollPosition = window.scrollY;
 
           if (
-            scrollPosition >= homeSection.offsetTop &&
+            scrollPosition > homeSection.offsetTop &&
             scrollPosition < aboutSection.offsetTop
           ) {
             setActiveItem("home");
           } else if (
-            scrollPosition >= aboutSection.offsetTop &&
-            scrollPosition < projectsSection.offsetTop
+            scrollPosition > aboutSection.offsetTop &&
+            scrollPosition < skillsSection.offsetTop
           ) {
             setActiveItem("about");
+          } else if (
+            scrollPosition > skillsSection.offsetTop &&
+            scrollPosition < projectsSection.offsetTop
+          ) {
+            setActiveItem("skills");
           }
 
           isScrolling = false;
@@ -75,7 +82,9 @@ const Dmenu = () => {
         </li>
         <li>
           <a
-            className="scroll-to flex items-center justify-center gap-5 my-4"
+            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
+              activeItem === "skills" ? "active" : ""
+            }`}
             href="#skills"
           >
             <span>Skills</span>
@@ -84,11 +93,13 @@ const Dmenu = () => {
         </li>
         <li>
           <a
-            className="scroll-to flex items-center justify-center gap-5 my-4"
-            href="#skills"
+            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
+              activeItem === "projects" ? "active" : ""
+            }`}
+            href="#projects"
           >
-            <span>Skills</span>
-            <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
+            <span>Projects</span>
+            <LiaGripVerticalSolid className="dmenu-icons"></LiaGripVerticalSolid>
           </a>
         </li>
         <li>

@@ -1,8 +1,8 @@
-import React from "react";
 import About from "./About";
 import "./CustomContainer.css";
 import HeroSection from "./HeroSection";
-import Ribbon from "./Ribbon";
+import Portfolio from "./Portfolio";
+// import Ribbon from "./Ribbon";
 import Skills from "./Skills";
 
 const CustomConatiner = () => {
@@ -13,6 +13,7 @@ const CustomConatiner = () => {
         <About></About>
         {/* <Ribbon></Ribbon> */}
         <Skills></Skills>
+        <Portfolio></Portfolio>
       </div>
     </div>
   );

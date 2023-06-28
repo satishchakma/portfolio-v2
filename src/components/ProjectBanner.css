@@ -1,0 +1,46 @@
+.project__banner {
+  margin-top: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 1px solid #5e5e5e;
+  border-top: 1px solid #5e5e5e;
+}
+.project__banner span {
+  display: inline-block;
+  font-style: italic;
+  /* padding: 1rem 0; */
+  color: #5e5e5e;
+  -webkit-animation: marquee 90s ease-in-out infinite running;
+  animation: marquee 90s ease-in-out infinite running;
+  will-change: transform;
+}
+.bar--64,
+.bar--68 {
+  /* font-family: "Libre Barcode 39 Extended Text", "cursive"; */
+  font-family: "Libre Barcode 39 Text", cursive;
+  text-transform: uppercase;
+}
+
+.bar--64 {
+  font-size: 4rem;
+}
+.project__banner span:hover {
+  font-style: normal;
+  color: #f9f5ef;
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+  50% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
