@@ -45,6 +45,10 @@
 .dmenu li .scroll-to:hover {
   color: var(--primary_color);
 }
+
+.active {
+  color: var(--primary_color);
+}
 .dmenu li .scroll-to:hover span,
 .dmenu li a:hover span {
   opacity: 1;

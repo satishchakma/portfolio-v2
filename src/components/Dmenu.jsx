@@ -7,118 +7,71 @@ import { FaShapes } from "react-icons/fa";
 import { LiaGripVerticalSolid } from "react-icons/lia";
 import { BsEnvelope } from "react-icons/bs";
 
+import { HashLink } from "react-router-hash-link";
+
 const Dmenu = () => {
-  const [activeItem, setActiveItem] = useState("home");
-
-  useEffect(() => {
-    let isScrolling = false;
-
-    const handleScroll = () => {
-      if (!isScrolling) {
-        window.requestAnimationFrame(() => {
-          // Logic to determine the active item based on scroll position
-          const homeSection = document.getElementById("home");
-          const aboutSection = document.getElementById("about");
-          const skillsSection = document.getElementById("skills");
-          const projectsSection = document.getElementById("projects");
-          const contactSection = document.getElementById("contact");
-          // ...
-
-          const scrollPosition = window.scrollY;
-
-          if (
-            scrollPosition > homeSection.offsetTop &&
-            scrollPosition < aboutSection.offsetTop
-          ) {
-            setActiveItem("home");
-          } else if (
-            scrollPosition > aboutSection.offsetTop &&
-            scrollPosition < skillsSection.offsetTop
-          ) {
-            setActiveItem("about");
-          } else if (
-            scrollPosition > skillsSection.offsetTop &&
-            scrollPosition < projectsSection.offsetTop
-          ) {
-            setActiveItem("skills");
-          } else if (
-            scrollPosition > projectsSection.offsetTop &&
-            scrollPosition < contactSection.offsetTop
-          ) {
-            setActiveItem("contact");
-          }
-
-          isScrolling = false;
-        });
-      }
-
-      isScrolling = true;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div>
       <ul className="dmenu scroll-nav d-flex">
         <li>
-          <a
-            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
-              activeItem === "home" ? "active" : ""
-            }`}
-            href="#home"
+          <HashLink
+            smooth
+            to="/#home"
+            activeClassName="active"
+            activeStyle={{ color: "red" }}
+            className="scroll-to flex items-center justify-center gap-5 my-4"
           >
             <span>Home</span>
             <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
-              activeItem === "about" ? "active" : ""
-            }`}
-            href="#about"
+          <HashLink
+            smooth
+            to="/#about"
+            activeClassName="active"
+            activeStyle={{ color: "red" }}
+            className="scroll-to flex items-center justify-center gap-5 my-4"
           >
             <span>About</span>
             <AiOutlineUser className="dmenu-icons"></AiOutlineUser>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
-              activeItem === "skills" ? "active" : ""
-            }`}
-            href="#skills"
+          <HashLink
+            smooth
+            to="/#skills"
+            activeClassName="active"
+            activeStyle={{ color: "red" }}
+            className="scroll-to flex items-center justify-center gap-5 my-4"
           >
             <span>Skills</span>
             <FaShapes className="dmenu-icons"></FaShapes>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
-              activeItem === "projects" ? "active" : ""
-            }`}
-            href="#projects"
+          <HashLink
+            smooth
+            to="/#projects"
+            activeClassName="active"
+            activeStyle={{ color: "red" }}
+            className="scroll-to flex items-center justify-center gap-5 my-4"
           >
             <span>Projects</span>
             <LiaGripVerticalSolid className="dmenu-icons"></LiaGripVerticalSolid>
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
-              activeItem === "contact" ? "active" : ""
-            }`}
-            href="#contact"
+          <HashLink
+            smooth
+            to="/#contact"
+            activeClassName="active"
+            activeStyle={{ color: "red" }}
+            className="scroll-to flex items-center justify-center gap-5 my-4"
           >
             <span>Contact</span>
             <BsEnvelope className="dmenu-icons"></BsEnvelope>
-          </a>
+          </HashLink>
         </li>
         <li>
           <a
