@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { FaShapes } from "react-icons/fa";
 import { LiaGripVerticalSolid } from "react-icons/lia";
+import { BsEnvelope } from "react-icons/bs";
 
 const Dmenu = () => {
   const [activeItem, setActiveItem] = useState("home");
@@ -20,6 +21,7 @@ const Dmenu = () => {
           const aboutSection = document.getElementById("about");
           const skillsSection = document.getElementById("skills");
           const projectsSection = document.getElementById("projects");
+          const contactSection = document.getElementById("contact");
           // ...
 
           const scrollPosition = window.scrollY;
@@ -39,6 +41,11 @@ const Dmenu = () => {
             scrollPosition < projectsSection.offsetTop
           ) {
             setActiveItem("skills");
+          } else if (
+            scrollPosition > projectsSection.offsetTop &&
+            scrollPosition < contactSection.offsetTop
+          ) {
+            setActiveItem("contact");
           }
 
           isScrolling = false;
@@ -104,11 +111,13 @@ const Dmenu = () => {
         </li>
         <li>
           <a
-            className="scroll-to flex items-center justify-center gap-5 my-4"
-            href="#portfolio"
+            className={`scroll-to flex items-center justify-center gap-5 my-4 ${
+              activeItem === "contact" ? "active" : ""
+            }`}
+            href="#contact"
           >
-            <span>Portfolio</span>
-            <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
+            <span>Contact</span>
+            <BsEnvelope className="dmenu-icons"></BsEnvelope>
           </a>
         </li>
         <li>

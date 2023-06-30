@@ -2,6 +2,10 @@ import "./Portfolio.css";
 import { LiaGripVerticalSolid } from "react-icons/lia";
 import ProjectBanner from "./ProjectBanner";
 import project1 from "../assets/main-1.png";
+import project2 from "../assets/main-2.png";
+
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const Portfolio = () => {
   return (
@@ -23,8 +27,11 @@ const Portfolio = () => {
       </div>
       <ProjectBanner></ProjectBanner>
       <div className="bg">
-        <img className="project1" src={project1} alt="" />
+        <div className="my-div">
+          <img className="project1" src={project1} alt="" />
+        </div>
       </div>
+      <div></div>
     </section>
   );
 };

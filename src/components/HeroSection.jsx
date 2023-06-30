@@ -56,7 +56,7 @@ const HeroSection = () => {
           collaborate and bring your ideas to life!
         </p>
         <a
-          href="#portfolio"
+          href="#projects"
           className="go-to-project-btn scroll-to scroll-animation my-[50px]"
         >
           <img

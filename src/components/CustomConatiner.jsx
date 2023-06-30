@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import "./CustomContainer.css";
 import HeroSection from "./HeroSection";
 import Portfolio from "./Portfolio";
@@ -14,6 +15,7 @@ const CustomConatiner = () => {
         {/* <Ribbon></Ribbon> */}
         <Skills></Skills>
         <Portfolio></Portfolio>
+        <Contact></Contact>
       </div>
     </div>
   );
