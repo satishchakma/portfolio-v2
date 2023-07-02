@@ -90,15 +90,12 @@
 @keyframes flow {
   0% {
     top: -20px;
-    rotate: 0deg;
   }
   50% {
     top: -40px;
-    rotate: -15deg;
   }
   100% {
     top: -20px;
-    rotate: 0deg;
   }
 }
 .myAnimations .svg2 {

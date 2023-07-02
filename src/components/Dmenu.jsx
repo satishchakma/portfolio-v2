@@ -1,8 +1,6 @@
-import React from "react";
 import "../components/Demenu.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { useState } from "react";
-import { useEffect } from "react";
+
 import { FaShapes } from "react-icons/fa";
 import { LiaGripVerticalSolid } from "react-icons/lia";
 import { BsEnvelope } from "react-icons/bs";
@@ -16,7 +14,7 @@ const Dmenu = () => {
         <li>
           <HashLink
             smooth
-            to="/#home"
+            to="#home"
             activeClassName="active"
             activeStyle={{ color: "red" }}
             className="scroll-to flex items-center justify-center gap-5 my-4"
@@ -28,7 +26,7 @@ const Dmenu = () => {
         <li>
           <HashLink
             smooth
-            to="/#about"
+            to="#about"
             activeClassName="active"
             activeStyle={{ color: "red" }}
             className="scroll-to flex items-center justify-center gap-5 my-4"
@@ -40,7 +38,7 @@ const Dmenu = () => {
         <li>
           <HashLink
             smooth
-            to="/#skills"
+            to="#skills"
             activeClassName="active"
             activeStyle={{ color: "red" }}
             className="scroll-to flex items-center justify-center gap-5 my-4"
@@ -52,7 +50,7 @@ const Dmenu = () => {
         <li>
           <HashLink
             smooth
-            to="/#projects"
+            to="#projects"
             activeClassName="active"
             activeStyle={{ color: "red" }}
             className="scroll-to flex items-center justify-center gap-5 my-4"
@@ -64,7 +62,7 @@ const Dmenu = () => {
         <li>
           <HashLink
             smooth
-            to="/#contact"
+            to="#contact"
             activeClassName="active"
             activeStyle={{ color: "red" }}
             className="scroll-to flex items-center justify-center gap-5 my-4"
@@ -72,24 +70,6 @@ const Dmenu = () => {
             <span>Contact</span>
             <BsEnvelope className="dmenu-icons"></BsEnvelope>
           </HashLink>
-        </li>
-        <li>
-          <a
-            className="scroll-to flex items-center justify-center gap-5 my-4"
-            href="#testimonial"
-          >
-            <span>Testimonial</span>
-            <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
-          </a>
-        </li>
-        <li>
-          <a
-            className="scroll-to flex items-center justify-center gap-5 my-4"
-            href="#contact"
-          >
-            <span>Contact</span>
-            <AiOutlineHome className="dmenu-icons"></AiOutlineHome>
-          </a>
         </li>
       </ul>
     </div>

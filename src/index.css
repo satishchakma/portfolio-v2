@@ -10,6 +10,20 @@ html.dark-mode {
   --cursor-color: #fff;
 }
 
+@font-face {
+  font-family: bigilla;
+  src: url(../src/assets/fonts/Bigilla.otf);
+}
+@font-face {
+  font-family: bigillaBold;
+  src: url(../src/assets/fonts/Bigilla-Bold.otf);
+}
+.bigilla {
+  font-family: bigilla;
+}
+.bigillaBold {
+  font-family: bigillaBold;
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
