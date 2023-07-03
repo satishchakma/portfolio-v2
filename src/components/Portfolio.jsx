@@ -79,7 +79,7 @@ const Portfolio = () => {
             selected classes on their dashboard. They also have the option to
             make payments or remove classes from their selection.
           </p>
-          <div className="my-8 grid grid-cols-10 ">
+          <div className="my-8 grid lg:grid-cols-10 grid-cols-5 ">
             <BiLogoReact className="w-10 h-10 stacks"></BiLogoReact>
             <SiExpress className="w-10 h-10 stacks"></SiExpress>
             <BiLogoMongodb className="w-10 h-10 stacks"></BiLogoMongodb>
@@ -148,17 +148,22 @@ const Portfolio = () => {
           <h1 className="font-bold text-3xl text-white bigilla">02</h1>
           <h1 className=" text-5xl text-white my-4">ToyMan</h1>
           <p className="text-justify">
-            The web application features a user-specific dashboard. Upon
-            registration, all users are assigned the role of students by
-            default. Only an admin has the ability to manage users and uploaded
-            classes. The admin can appoint instructors, approve or deny classes,
-            and provide feedback when necessary. Instructors, on the other hand,
-            can add new classes and access class details through their
-            dashboard. Students can select multiple classes and view their
-            selected classes on their dashboard. They also have the option to
-            make payments or remove classes from their selection.
+            ToyMan is an exciting web-based project that combines the joy of
+            toys with the convenience of an online platform. Powered by
+            Firebase, it offers a secure login and registration page with
+            options for Google and email login. Real-time data from a MongoDB
+            database is loaded through a specially created API, ensuring the
+            latest toy information is always available. Dynamic routing enables
+            users to explore detailed toy pages, while private routes ensure
+            privacy. Users can add their favorite toys and enjoy interactive
+            notifications with Toastify. ToyMan features simple animations to
+            enhance the visual experience. It also enables CRUD operations for
+            effective toy management. With its secure authentication, real-time
+            data, dynamic routing, private routes, favorite functionalities,
+            animations, and CRUD operations, ToyMan provides an immersive and
+            engaging platform for toy enthusiasts to explore and enjoy.
           </p>
-          <div className="my-8 grid grid-cols-10 ">
+          <div className="my-8 grid lg:grid-cols-10 grid-cols-5 ">
             <BiLogoReact className="w-10 h-10 stacks"></BiLogoReact>
             <SiExpress className="w-10 h-10 stacks"></SiExpress>
             <BiLogoMongodb className="w-10 h-10 stacks"></BiLogoMongodb>
@@ -227,17 +232,21 @@ const Portfolio = () => {
           <h1 className="font-bold text-3xl text-white bigilla">03</h1>
           <h1 className=" text-5xl text-white my-4">Chef's Table</h1>
           <p className="text-justify">
-            The web application features a user-specific dashboard. Upon
-            registration, all users are assigned the role of students by
-            default. Only an admin has the ability to manage users and uploaded
-            classes. The admin can appoint instructors, approve or deny classes,
-            and provide feedback when necessary. Instructors, on the other hand,
-            can add new classes and access class details through their
-            dashboard. Students can select multiple classes and view their
-            selected classes on their dashboard. They also have the option to
-            make payments or remove classes from their selection.
+            Chef's Table is a web-based project that allows users to explore the
+            world of renowned chefs and their culinary creations. Powered by
+            Firebase, the project includes a login and register page for secure
+            user authentication. Users can log in using their Google or GitHub
+            accounts for added convenience. The project leverages a specially
+            created API to load a vast database of chefs' profiles and recipes.
+            Dynamic routing enables users to access detailed profiles of
+            individual chefs. Private routes ensure privacy and personalized
+            experiences. A standout feature is the ability to add chefs and
+            recipes to favorites, with interactive notifications powered by
+            Toastify. Chef's Table offers an immersive culinary experience,
+            making it the ideal platform for food enthusiasts and aspiring
+            chefs.
           </p>
-          <div className="my-8 grid grid-cols-10 ">
+          <div className="my-8 grid lg:grid-cols-10 grid-cols-5 ">
             <BiLogoReact className="w-10 h-10 stacks"></BiLogoReact>
             <SiExpress className="w-10 h-10 stacks"></SiExpress>
 
