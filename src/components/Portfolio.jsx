@@ -39,10 +39,28 @@ const Portfolio = () => {
         <div className="bg">
           {/* <img className="project1" src={project1} alt="" /> */}
           <div className="my-div">
-            <div className="overlay h-full text-white flex justify-center items-center gap-4">
-              <a href="Link">Live Link</a>
-              <a href="Link">Github Client Side</a>
-              <a href="Link">Github Server Side</a>
+            <div className="overlay h-full text-white block lg:flex justify-center items-center gap-4">
+              <a
+                href="https://hello-summer-e56ae.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Link
+              </a>
+              <a
+                href="https://github.com/satishchakma/Hello-Summer-Client"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Client Side
+              </a>
+              <a
+                href="https://github.com/satishchakma/Hello-Summer-Server"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Server Side
+              </a>
             </div>
           </div>
         </div>
@@ -68,10 +86,31 @@ const Portfolio = () => {
             <BiLogoFirebase className="w-10 h-10 stacks"></BiLogoFirebase>
             <BiLogoMongodb className="w-10 h-10 stacks"></BiLogoMongodb>
           </div>
-          <div className="flex gap-4">
-            <Link className="link"> Live Link</Link>
-            <Link className="link"> Github Client Side</Link>
-            <Link className="link"> Github Server Side</Link>
+          <div className="block lg:flex gap-4">
+            <a
+              href="https://hello-summer-e56ae.web.app/"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Link
+            </a>
+            <a
+              href="https://github.com/satishchakma/Hello-Summer-Client"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github Client Side
+            </a>
+            <a
+              href="https://github.com/satishchakma/Hello-Summer-Server"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github Server Side
+            </a>
           </div>
         </div>
       </div>
@@ -79,10 +118,28 @@ const Portfolio = () => {
         <ProjectBanner text={"ToyMan"}></ProjectBanner>
         <div className="bg2">
           <div className="my-div">
-            <div className="overlay h-full text-white flex justify-center items-center gap-4">
-              <a href="Link">Live Link</a>
-              <a href="Link">Github Client Side</a>
-              <a href="Link">Github Server Side</a>
+            <div className="overlay h-full text-white block lg:flex justify-center items-center gap-4">
+              <a
+                href="https://toyman-32b27.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Link
+              </a>
+              <a
+                href="https://github.com/satishchakma/ToyMan-Client"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Client Side
+              </a>
+              <a
+                href="https://github.com/satishchakma/ToyMan-Server"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Server Side
+              </a>
             </div>
           </div>
         </div>
@@ -108,10 +165,31 @@ const Portfolio = () => {
             <BiLogoFirebase className="w-10 h-10 stacks"></BiLogoFirebase>
             <BiLogoMongodb className="w-10 h-10 stacks"></BiLogoMongodb>
           </div>
-          <div className="flex gap-4">
-            <Link className="link"> Live Link</Link>
-            <Link className="link"> Github Client Side</Link>
-            <Link className="link"> Github Server Side</Link>
+          <div className="block lg:flex gap-4">
+            <a
+              href="https://toyman-32b27.web.app/"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Link
+            </a>
+            <a
+              href="https://github.com/satishchakma/ToyMan-Client"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github Client Side
+            </a>
+            <a
+              href="https://github.com/satishchakma/ToyMan-Server"
+              className="link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github Server Side
+            </a>
           </div>
         </div>
       </div>
@@ -119,10 +197,28 @@ const Portfolio = () => {
         <ProjectBanner text={"Chefs Table"}></ProjectBanner>
         <div className="bg3">
           <div className="my-div">
-            <div className="overlay h-full text-white flex justify-center items-center gap-4">
-              <a href="Link">Live Link</a>
-              <a href="Link">Github Client Side</a>
-              <a href="Link">Github Server Side</a>
+            <div className="overlay h-full text-white block lg:flex justify-center items-center gap-4">
+              <a
+                href="https://chef-s-table-f7ef1.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Link
+              </a>
+              <a
+                href="https://github.com/satishchakma/Chef-s-Table-Client"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Client Side
+              </a>
+              <a
+                href="https://github.com/satishchakma/Chef-s-Table-Server"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github Server Side
+              </a>
             </div>
           </div>
         </div>
@@ -148,10 +244,31 @@ const Portfolio = () => {
             <BiLogoFirebase className="w-10 h-10 stacks"></BiLogoFirebase>
             <BiLogoMongodb className="w-10 h-10 stacks"></BiLogoMongodb>
           </div>
-          <div className="flex gap-4">
-            <Link className="link"> Live Link</Link>
-            <Link className="link"> Github Client Side</Link>
-            <Link className="link"> Github Server Side</Link>
+          <div className="block lg:flex gap-4">
+            <a
+              href="https://chef-s-table-f7ef1.web.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              Live Link
+            </a>
+            <a
+              href="https://github.com/satishchakma/Chef-s-Table-Client"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              Github Client Side
+            </a>
+            <a
+              href="https://github.com/satishchakma/Chef-s-Table-Server"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              Github Server Side
+            </a>
           </div>
         </div>
       </div>

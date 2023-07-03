@@ -67,3 +67,18 @@
   margin-top: -5px;
   z-index: -1;
 }
+
+@media only screen and (max-width: 600px) {
+  .dmenu {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 10px;
+    bottom: -343px;
+    margin: auto;
+    right: -1%;
+    /* transform: translateX(-50%); */
+    width: 100%;
+    height: 75px !important;
+  }
+}

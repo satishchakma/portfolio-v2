@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
         <h1
           data-aos="fade-up"
-          className="scroll-animation text-white font-bold text-5xl leading-[70px] mb-4"
+          className="scroll-animation text-white font-bold text-5xl lg:leading-[70px] leading-[60px] mb-4"
         >
           Hi, I'm<span> Satish</span>, <br></br>
           <TypeAnimation

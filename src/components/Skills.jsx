@@ -35,7 +35,7 @@ const Skills = () => {
           <span> Stacks</span>
         </h1>
       </div>
-      <div className="grid grid-cols-6 gap-6">
+      <div className="grid lg:grid-cols-6 grid-cols-3 gap-6">
         <div className="stacks flex flex-col justify-center items-center">
           <DiJavascript1 className="w-14 h-14 "></DiJavascript1>
           <h2>Javascript</h2>

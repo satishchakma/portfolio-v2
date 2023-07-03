@@ -128,3 +128,23 @@
     top: 35px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  /* .index-module_type__E-SaG
+  .dmenu {
+    display: none;
+  } */
+  .left-sidebar {
+    position: static;
+    display: block;
+    transform: none;
+    margin: auto;
+  }
+  .custom-container {
+    max-width: 100% !important;
+  }
+  .content-width {
+    max-width: 100% !important;
+    position: static !important;
+  }
+}

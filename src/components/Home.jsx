@@ -15,9 +15,13 @@ AOS.init();
 
 const Home = () => {
   return (
-    <div className="flex " data-aos="fade-right" data-aos-duration="6000">
+    <div
+      className="lg:flex block"
+      data-aos="fade-right"
+      data-aos-duration="6000"
+    >
       <div className="left-sidebar ">
-        <span className="setting-toggle absolute top-14 left-[-20px]">
+        <span className="setting-toggle absolute top-14 lg:left-[-20px] left-[-6px]">
           <TbSettings className="setting"></TbSettings>
         </span>
         <div className="sidebar-header flex items-center justify-between">
@@ -106,22 +110,42 @@ const Home = () => {
         <p className="copyright my-6">© 2023 Satish. All Rights Reserved</p>
         <ul className="social-profile flex items-center wrap justify-center gap-4 my-6">
           <li>
-            <a href="#" className="flex justify-center items-center">
+            <a
+              href="https://www.linkedin.com/in/satishchakma/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-center items-center"
+            >
               <FaLinkedinIn></FaLinkedinIn>
             </a>
           </li>
           <li>
-            <a href="#" className="flex justify-center items-center">
+            <a
+              href="https://github.com/satishchakma"
+              target="_blank"
+              rel="noreferrer"
+              className="flex justify-center items-center"
+            >
               <FaGithub></FaGithub>
             </a>
           </li>
           <li>
-            <a href="#" className="flex justify-center items-center">
+            <a
+              href="https://www.fiverr.com/satishchakma"
+              className="flex justify-center items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
               <TbBrandFiverr></TbBrandFiverr>
             </a>
           </li>
           <li>
-            <a href="#" className="flex justify-center items-center">
+            <a
+              href="https://www.upwork.com/freelancers/satishchakma"
+              className="flex justify-center items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
               <TbBrandUpwork></TbBrandUpwork>
             </a>
           </li>
@@ -132,8 +156,6 @@ const Home = () => {
         </a>
       </div>
       <CustomConatiner></CustomConatiner>
-      {/* <Ribbon></Ribbon> */}
-      {/* <Dmenu></Dmenu> */}
     </div>
   );
 };
